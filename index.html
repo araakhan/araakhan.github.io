@@ -1,19 +1,109 @@
-<HTML>
-<HEAD><TITLE> See on tab</TITLE>
-</HEAD>
-<BODY style="background-color:pink;">
-<FONT size="9" style ="font-family:Verdana">The Cat Cafe <3</FONT>
-<style="background-color:pink"> 
-<BR>
-<BR>
-<BR>
-<img align = "middle" src="cat.jpeg" width="500" height = "500">
-<BR>
-<BR>
-<BR>
-<A href="https://www.theweathernetwork.com/">click here for weather</A>
-</BODY>
-    <div id="ww_96856e9e135" v='1.3' loc='id' a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>More forecasts: <a href="https://oneweather.org/new_york_city/30_days/" id="ww_96856e9e135_u" target="_blank">NYC weather 30 day</a></div><script async src="https://app3.weatherwidget.org/js/?id=ww_96856e9e135"></script>
-    <div id="ww_540bb11229464" v='1.3' loc='id' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":["wl2640"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Weather Data Source: <a href="https://wetterlang.de" id="ww_540bb11229464_u" target="_blank">Wetter vorhersage 30 tage</a></div><script async src="https://app3.weatherwidget.org/js/?id=ww_540bb11229464"></script>
-    <div id="ww_a29b5fe74f32c" v='1.3' loc='id' a='{"t":"ticker","lang":"en","sl_lpl":1,"ids":["wl4531"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>More forecasts: <a href="https://oneweather.org/orlando/30_days/" id="ww_a29b5fe74f32c_u" target="_blank">Orlando weather 30-day forecast</a></div><script async src="https://app3.weatherwidget.org/js/?id=ww_a29b5fe74f32c"></script>
-</HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cat Corner 🐱</title>
+
+    <style>
+        body {
+            background-color: #fff0f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #70445c;
+            margin: 0;
+        }
+
+        header {
+            background-color: #ffcce0;
+            padding: 25px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .cat-image {
+            width: 250px;
+            border-radius: 20px;
+        }
+
+        button {
+            background-color: #ff99c8;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #e879ae;
+        }
+
+        footer {
+            background-color: #ffcce0;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🐱 The Cat Corner 🐱</h1>
+        <p>Your little corner of the internet for all things cats!</p>
+    </header>
+
+    <section>
+        <h2>Welcome, Cat Lovers!</h2>
+        <p>Welcome to The Cat Corner! Here you can explore cute cats, learn fun facts, and play cat games!</p>
+
+        <img class="cat-image" 
+        src="https://placekitten.com/400/300" 
+        alt="A cute cat">
+    </section>
+
+    <section>
+        <h2>🐾 Fun Cat Facts</h2>
+        <p>• Cats sleep for around 12-16 hours a day.</p>
+        <p>• A group of cats is called a clowder.</p>
+        <p>• Cats use their whiskers to help them sense their surroundings.</p>
+    </section>
+
+    <section>
+        <h2>🎮 Cat Game</h2>
+        <p>Click the button to discover a random cat fact!</p>
+
+        <button onclick="showFact()">Click Me!</button>
+
+        <p id="fact"></p>
+    </section>
+
+    <footer>
+        <p>Made with 💗 by Araa | The Cat Corner © 2026</p>
+    </footer>
+
+    <script>
+        function showFact() {
+            let facts = [
+                "Cats can jump several times their own height!",
+                "Cats have an amazing sense of hearing!",
+                "Every cat has a unique nose pattern!",
+                "Cats communicate using different sounds!"
+            ];
+
+            let randomNumber = Math.floor(Math.random() * facts.length);
+
+            document.getElementById("fact").innerHTML = facts[randomNumber];
+        }
+    </script>
+
+</body>
+</html>
