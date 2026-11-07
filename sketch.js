@@ -3,7 +3,8 @@
 var x = 300;
 var y = 300;
 function setup() {
-  createCanvas(600, 600);
+  let canvas = createCanvas(600, 600);
+  canvas.parent('sketch-container');
   //black background
   background(0, 0, 0);
 }
